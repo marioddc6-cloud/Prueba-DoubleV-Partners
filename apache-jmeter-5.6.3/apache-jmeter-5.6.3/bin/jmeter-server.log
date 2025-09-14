@@ -1,0 +1,80 @@
+2025-09-13 12:43:37,964 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-09-13 12:43:37,995 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2025-09-13 12:43:37,996 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: Version 5.6.3
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: java.version=11.0.11
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: os.name=Windows 10
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: os.arch=amd64
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: os.version=10.0
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: file.encoding=Cp1252
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: java.awt.headless=true
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-09-13 12:43:38,003 INFO o.a.j.JMeter: Available Processors =8
+2025-09-13 12:43:38,011 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-09-13 12:43:38,011 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-09-13 12:43:38,011 INFO o.a.j.JMeter: JMeterHome=C:\Users\MARIOD.DIAZ\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2025-09-13 12:43:38,011 INFO o.a.j.JMeter: user.dir  =C:\Users\MARIOD.DIAZ\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin
+2025-09-13 12:43:38,011 INFO o.a.j.JMeter: PWD       =C:\Users\MARIOD.DIAZ\Downloads\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin
+2025-09-13 12:43:38,013 INFO o.a.j.JMeter: IP: 192.168.1.104 Name: LSTKBO220923 FullName: LSTKBO220923.softtekprojects.com
+2025-09-13 12:43:38,036 INFO o.a.j.r.RmiUtils: System property 'java.rmi.server.hostname' is not defined, using localHost address
+2025-09-13 12:43:38,036 INFO o.a.j.r.RmiUtils: Local IP address=192.168.1.104
+2025-09-13 12:43:38,515 ERROR o.a.j.JMeter: Giving up, as server failed with:
+java.rmi.server.ExportException: Listen failed on port: 0; nested exception is: 
+	java.io.FileNotFoundException: rmi_keystore.jks (El sistema no puede encontrar el archivo especificado)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:337) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:243) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:412) ~[?:?]
+	at java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147) ~[?:?]
+	at java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:234) ~[?:?]
+	at java.rmi/java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:470) ~[?:?]
+	at java.rmi/java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:381) ~[?:?]
+	at java.rmi/java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:260) ~[?:?]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.<init>(RemoteJMeterEngineImpl.java:68) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.startServer(RemoteJMeterEngineImpl.java:74) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:464) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
+Caused by: java.io.FileNotFoundException: rmi_keystore.jks (El sistema no puede encontrar el archivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.loadStore(SSLRMIServerSocketFactory.java:147) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.createServerSocket(SSLRMIServerSocketFactory.java:99) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:670) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:324) ~[?:?]
+	... 15 more
+2025-09-13 12:43:38,524 ERROR o.a.j.JMeter: An error occurred: 
+java.rmi.server.ExportException: Listen failed on port: 0; nested exception is: 
+	java.io.FileNotFoundException: rmi_keystore.jks (El sistema no puede encontrar el archivo especificado)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:337) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:243) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:412) ~[?:?]
+	at java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147) ~[?:?]
+	at java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:234) ~[?:?]
+	at java.rmi/java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:470) ~[?:?]
+	at java.rmi/java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:381) ~[?:?]
+	at java.rmi/java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:260) ~[?:?]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.<init>(RemoteJMeterEngineImpl.java:68) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.startServer(RemoteJMeterEngineImpl.java:74) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:464) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
+Caused by: java.io.FileNotFoundException: rmi_keystore.jks (El sistema no puede encontrar el archivo especificado)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112) ~[?:?]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.loadStore(SSLRMIServerSocketFactory.java:147) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.createServerSocket(SSLRMIServerSocketFactory.java:99) ~[ApacheJMeter_core.jar:5.6.3]
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:670) ~[?:?]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:324) ~[?:?]
+	... 15 more
